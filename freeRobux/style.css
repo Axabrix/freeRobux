@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(176, 214, 230);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+.board-robux {
+    background-color: white;
+    padding: 20px;
+    top: 50%;
+    position: absolute;
+    animation: fadeUp ease 0.8s;
+    left: 50%;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    display: none;
+    transform: translate(-50%,-50%);
+}
+
+.board-robux p {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(214, 208, 208);
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.board-robux button {
+    background-color: lime;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 5vw;
+    transition: background 0.6s;
+    
+
+}
+
+.board-robux h1 {
+    text-align: center;
+}
+
+.board-robux button:hover {
+    background-color: green;
+
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50% ,-50%);
+    }
+}
+
+strong {
+    color: red;
+    text-decoration: line-through;
+}
+
+
+
+.Login-Box {
+    display: none;
+    background-color: white;
+    padding: 60px;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    animation: fadeUp ease 0.8s;
+    left: 50%;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    animation: fadeUp ease 0.8s;
+    transform: translate(-50%,-50%);
+}
+
+.Login-Box input{ 
+    display: block;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.6s;
+}
+.Login-Box input:focus {
+    outline: none;
+}
+
+.Login-Box button {
+    background-color: lime;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 5vw;
+    transition: background 0.6s;
+}
+
+.Login-Box button:hover {
+    background-color: green;
+}
+
+.robloxBar {
+    text-align: center;
+    background-color: skyblue;
+    margin: 0px;
+    top: 0%;
+    width: 100%;
+}
+
+.robloxBar h1 {
+    color: white;
+}
+
+.robloxBar button {
+    padding: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.8s;
+}
+
+.robloxBar button:hover {
+    background-color: lime;
+}
+
